@@ -1,0 +1,18 @@
+/* <Form>
+              <Form.Group className="mb-3" controlId="formBasicEmail">
+                <Form.Control type="text" placeholder="Name" />
+                <Form.Control type="email" placeholder="Email" />
+                <Form.Control type="date" placeholder="Date" />
+                <Form.Control type="time" placeholder="Time" />
+                <Form.Select>
+                  <option>Person</option>
+                  <option>Person 1</option>
+                  <option>Person 2</option>
+                  <option>Person 3</option>
+                  <option>Person 4</option>
+                </Form.Select>
+              </Form.Group>
+              <Button variant="primary" type="submit">
+                Submit
+              </Button>
+            </Form> */

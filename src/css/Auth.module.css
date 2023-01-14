@@ -1,0 +1,76 @@
+.auth_bg {
+    background-image: url("../img/bg.jpg");
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+
+.auth_bg::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(51,33,29,0.8);
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+.auth_container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 50px;
+}
+
+.auth_content label {
+    color: var(--secondary-color);
+}
+
+.auth_content input {
+    border-color: var(--secondary-color);
+    background-color: transparent;
+    margin-bottom: 15px;
+}
+
+.auth_content input:focus {
+    background-color: transparent;
+}
+
+.auth_content input::placeholder {
+    color: var(--secondary-color);
+
+}
+
+.auth_content button {
+    width: 100%;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.auth_content button:hover {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+
+.auth_content .auth_links a {
+    color: var(--secondary-color) !important;
+}
+
+.back_home {
+    width: 100%;
+    text-align: end;
+    font-size: 26px;
+}
