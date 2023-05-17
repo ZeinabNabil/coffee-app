@@ -1,6 +1,9 @@
 import React from "react";
-import { Col, Placeholder, Row } from "react-bootstrap";
-import style from "../../css/sections/AboutUS.module.css";
+
+// Style
+import style from "../../css/sections/Sections.module.css";
+
+// Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLocationDot,
@@ -13,6 +16,11 @@ import {
   faLinkedinIn,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
+
+// React bootstrap
+import { Col, Placeholder, Row } from "react-bootstrap";
+
+// Components
 import CoffeeForm from "./CoffeeForm";
 
 const CoffeeFooter = () => {
@@ -38,8 +46,8 @@ const CoffeeFooter = () => {
           <Col lg={3} md={6} sm={12}>
             <div className={style.footer_section}>
               <h4 className="mb-4">Get In Touch</h4>
-              {getInTouch.map((item) => (
-                <p>
+              {getInTouch.map((item, index) => (
+                <p key={index}>
                   <FontAwesomeIcon icon={item.icon} className={style.icon} />
                   {item.p}
                 </p>
@@ -53,8 +61,8 @@ const CoffeeFooter = () => {
                 Amet elitr vero magna sed ipsum sit kasd sea elitr lorem rebum
               </p>
               <div className={style.footer_links}>
-                {socialLinks.map((link) => (
-                  <a className="btn btn-outline-light" href="#">
+                {socialLinks.map((link, index) => (
+                  <a key={index} className="btn btn-outline-light" href="#">
                     <FontAwesomeIcon icon={link} />
                   </a>
                 ))}
@@ -65,9 +73,9 @@ const CoffeeFooter = () => {
             <div className={style.footer_section}>
               <h4 className="mb-4">Open Hours</h4>
               <div>
-                <h6 class="text-white text-uppercase">Monday - Friday</h6>
+                <h6 className="text-white text-uppercase">Monday - Friday</h6>
                 <p>8.00 AM - 8.00 PM</p>
-                <h6 class="text-white text-uppercase">Saturday - Sunday</h6>
+                <h6 className="text-white text-uppercase">Saturday - Sunday</h6>
                 <p>2.00 PM - 8.00 PM</p>
               </div>
             </div>

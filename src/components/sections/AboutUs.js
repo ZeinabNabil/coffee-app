@@ -1,12 +1,20 @@
 import React from "react";
-import style from "../../css/sections/AboutUS.module.css";
-import SectionTitle from "../SectionTitle";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import aboutUsImg from "../../img/about.png";
+
+// Style
+import style from "../../css/sections/Sections.module.css";
+
+// Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
+
+// React bootstrap
+import { Col, Row } from "react-bootstrap";
+
+// Images
+import aboutUsImg from "../../img/about.png";
+
+// Components
+import SectionTitle from "./SectionTitle";
 
 const AboutUS = () => {
   const vision = [
@@ -65,8 +73,8 @@ const AboutUS = () => {
                 Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est
                 dolor
               </p>
-              {vision.map((header) => (
-                <h5>
+              {vision.map((header, index) => (
+                <h5 key={index}>
                   <FontAwesomeIcon icon={header.icon} className={style.icon} />
                   {header.title}
                 </h5>

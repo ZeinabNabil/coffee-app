@@ -1,9 +1,17 @@
 import React, { useState } from "react";
-import style from "../../css/Auth.module.css";
-import CoffeeForm from "../sections/CoffeeForm";
-import { Link } from "react-router-dom";
+
+// Style
+import style from "../../css/authentication/Auth.module.css";
+
+// Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
+
+// React Router
+import { Link } from "react-router-dom";
+
+// Components
+import CoffeeForm from "../sections/CoffeeForm";
 
 const Login = () => {
   const [form, setForm] = useState({

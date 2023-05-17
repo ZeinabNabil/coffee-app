@@ -1,20 +1,23 @@
 import React from "react";
+
+// Style
+import style from "../../css/sections/Sections.module.css";
+
+// React bootstrap
 import { Button, Form } from "react-bootstrap";
-import style from "../../css/sections/AboutUS.module.css";
 
 const CoffeeForm = ({ types, selection, btnName, options, onSubmit }) => {
   const inputTypes = types;
   const selectOptions = options;
 
-  console.log(inputTypes);
   return (
     <Form onSubmit={onSubmit}>
       <Form.Group className="mb-3">
         {inputTypes.length <= 0
           ? null
-          : inputTypes.map((inputType) => {
+          : inputTypes.map((inputType, index) => {
               return (
-                <>
+                <span key={index}>
                   {!inputType.labelName ? (
                     <Form.Control
                       type={inputType.typeName}
@@ -38,13 +41,13 @@ const CoffeeForm = ({ types, selection, btnName, options, onSubmit }) => {
                       />
                     </>
                   )}
-                </>
+                </span>
               );
             })}
         {!selection ? null : (
           <Form.Select>
-            {selectOptions.map((option) => (
-              <option>{option}</option>
+            {selectOptions.map((option, index) => (
+              <option key={index}>{option}</option>
             ))}
           </Form.Select>
         )}

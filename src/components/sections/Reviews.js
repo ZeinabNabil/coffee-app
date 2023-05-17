@@ -1,23 +1,28 @@
 import React from "react";
-import style from "../../css/sections/AboutUS.module.css";
-import SectionTitle from "../SectionTitle";
+
+// Style
+import style from "../../css/sections/Sections.module.css";
+
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
+import { Pagination, A11y } from "swiper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import { Col, Row } from "react-bootstrap";
 
 // Images
 import testiImgOne from "../../img/testimonial-1.jpg";
 import testiImgTwo from "../../img/testimonial-2.jpg";
 import testiImgThree from "../../img/testimonial-3.jpg";
 import testiImgFour from "../../img/testimonial-4.jpg";
+
+// React bootstrap
+import { Col, Row } from "react-bootstrap";
+
+// Components
+import SectionTitle from "./SectionTitle";
 
 const Reviews = () => {
   const clients = [
@@ -63,9 +68,9 @@ const Reviews = () => {
           slidesPerView={3}
           pagination={{ clickable: true }}
         >
-          {clients.map((client) => {
+          {clients.map((client, index) => {
             return (
-              <SwiperSlide>
+              <SwiperSlide key={index}>
                 <Row>
                   <Col lg={12}>
                     <Row>
@@ -84,7 +89,7 @@ const Reviews = () => {
                   </Col>
                   <Col lg={12} className="mb-5">
                     <div className={style.review_description}>
-                      <p class="m-0">{client.clientReview}</p>
+                      <p className="m-0">{client.clientReview}</p>
                     </div>
                   </Col>
                 </Row>

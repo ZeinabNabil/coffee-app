@@ -1,5 +1,9 @@
 import React from "react";
-import style from "../../css/Auth.module.css";
+
+// Style
+import style from "../../css/authentication/Auth.module.css";
+
+// React Router
 import { Outlet } from "react-router-dom";
 
 const Auth = () => {

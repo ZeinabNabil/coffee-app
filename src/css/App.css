@@ -202,6 +202,11 @@ body {
   z-index: 1 !important;
 }
 
+.carousel-indicators button:focus {
+  box-shadow: none !important; 
+  border-color: transparent !important;
+}
+
 .sections {
   padding-top: var(--section-padding);
   /* padding-bottom: var(--section-padding); */

@@ -1,11 +1,15 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
-import style from "../../css/sections/AboutUS.module.css";
-import SectionTitle from "../SectionTitle";
+
+// Style
+import style from "../../css/sections/Sections.module.css";
+
+// Images
 import serviceOne from "../../img/service-1.jpg";
 import serviceTwo from "../../img/service-2.jpg";
 import serviceThree from "../../img/service-3.jpg";
 import serviceFour from "../../img/service-4.jpg";
+
+// Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTruck,
@@ -13,6 +17,12 @@ import {
   faMedal,
   faTable,
 } from "@fortawesome/free-solid-svg-icons";
+
+// React bootstrap
+import { Col, Row } from "react-bootstrap";
+
+// Components
+import SectionTitle from "./SectionTitle";
 
 const Services = () => {
   const services = [
@@ -52,9 +62,9 @@ const Services = () => {
       </div>
       <div className={style.services_container}>
         <Row>
-          {services.map((service) => {
+          {services.map((service, index) => {
             return (
-              <Col lg={6} md={12} className={style.service}>
+              <Col key={index} lg={6} md={12} className={style.service}>
                 <Row>
                   <Col lg={6} md={6} sm={12}>
                     <div className={style.service_img}>

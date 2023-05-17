@@ -1,9 +1,16 @@
+// Style
 import "./css/App.css";
+
+// bootstrap
 import "bootstrap/dist/css/bootstrap.min.css";
 import "jquery/dist/jquery.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
+
+// React Router
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Landing from "./Landing";
+
+// Components
+import Landing from "./components/Landing";
 import Auth from "./components/Authentication/Auth";
 import Login from "./components/Authentication/Login";
 import Register from "./components/Authentication/Register";

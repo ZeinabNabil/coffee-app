@@ -1,14 +1,28 @@
 import React from "react";
+
+// Redux
 import { useDispatch } from "react-redux";
-import { Button, Col } from "react-bootstrap";
-import style from "../../css/sections/AboutUS.module.css";
 import { addToOrder } from "../../redux/coffeeSlice";
 
-const MenuItem = ({ img, price, name, description }) => {
+// Style
+import style from "../../css/sections/Sections.module.css";
+
+// React bootstrap
+import { Button, Col } from "react-bootstrap";
+
+const MenuItem = ({
+  id,
+  img,
+  price,
+  name,
+  description,
+  count,
+  itemTotalPrice,
+}) => {
   const dispatch = useDispatch();
   return (
     <>
-      <Col sm={3} className="mb-5">
+      <Col sm={3} className="mb-3">
         <div className={style.menu_item_img}>
           <img src={img} alt="menu item img" />
           <span className={style.menu_item_price}>{price}</span>
@@ -16,13 +30,15 @@ const MenuItem = ({ img, price, name, description }) => {
       </Col>
       <Col sm={9} className="mb-5">
         <div className={style.item_description}>
-          <h4 class>{name}</h4>
-          <p class="m-0">{description}</p>
+          <h4>{name}</h4>
+          <p className="m-0">{description}</p>
           <div className={style.order_btn}>
             <Button
               variant="primary"
               onClick={() => {
-                dispatch(addToOrder({ name, price }));
+                dispatch(
+                  addToOrder({ id, img, name, price, count, itemTotalPrice })
+                );
               }}
             >
               Order Now

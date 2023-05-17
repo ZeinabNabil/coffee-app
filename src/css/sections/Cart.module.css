@@ -1,0 +1,115 @@
+@media screen and (max-width: 768px) {
+    .cart {
+        flex-flow: column;
+    }
+
+    .order {
+        justify-content: center;
+    }
+
+    .order h5 {
+        padding: 10px 0;
+    }
+
+    .order button:last-child {
+        margin-right: 0;
+    }
+
+    .total_price, .check_out {
+        text-align: center !important;
+    }
+
+    .total_price {
+        margin-bottom: 10px;
+    }
+}
+
+.cart {
+    display: flex;
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 25px;
+    margin-top: 20px;
+}
+
+.cart:first-child {
+    margin-top: 0;
+}
+
+.cart:last-child {
+    border-bottom: none;
+}
+
+.order {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.order .delete_from_order {
+    background-color: transparent;
+    border: none;
+    color: var(--secondary-color);
+}
+
+.order .delete_from_order:hover {
+    background-color: transparent;
+    border: none;
+    color: var(--secondary-color);
+}
+
+.order .delete_from_order:focus {
+    box-shadow: none !important;
+    border-color: none !important;
+    background-color: transparent !important;
+    color: var(--secondary-color) !important;
+}
+
+.order .delete_from_order svg {
+    font-size: 20px;
+}
+
+.order_img {
+    width: 50%;
+    margin: auto;
+}
+
+.order_img img {
+    width: 100%;
+}
+
+
+.content_center_order {
+    display: flex;
+    justify-content: center;
+}
+
+ .colored_btn {
+    padding: 2px 7px;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+ .colored_btn:hover {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+
+ .colored_btn,.order p {
+    margin-right: 15px;
+}
+
+.order p {
+    margin-bottom: 0;
+}
+
+.total_price, .check_out {
+    text-align: end;
+}
+
+.check_out .colored_btn {
+    margin: 0;
+    padding: 6px 12px;
+}
+
+
+

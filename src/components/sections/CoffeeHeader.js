@@ -1,15 +1,19 @@
 import React, { useState, useEffect, useRef } from "react";
+
+// Redux
 import { useSelector, useDispatch } from "react-redux";
+import { makeScroll } from "../../redux/coffeeSlice";
+
+// React Router
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import Carousel from "react-bootstrap/Carousel";
-import imgOne from "../img/carousel-1.jpg";
-import imgTwo from "../img/carousel-2.jpg";
-import { makeScroll } from "../redux/coffeeSlice";
+
+// Images
+import imgOne from "../../img/carousel-1.jpg";
+import imgTwo from "../../img/carousel-2.jpg";
+
+// React bootstrap
+import { Container, Nav, Navbar, NavDropdown, Carousel } from "react-bootstrap";
 
 const CoffeeHeader = () => {
   const { scrolled } = useSelector((state) => state.coffee);
@@ -73,12 +77,16 @@ const CoffeeHeader = () => {
               style={{ maxHeight: "100px" }}
               navbarScroll
             >
-              {coffeeNav.map((item) => {
+              {coffeeNav.map((item, index) => {
                 if (item === "Pages") {
                   return (
-                    <NavDropdown title={item} id="navbarScrollingDropdown">
-                      {coffeeNavDrop.map((drop) => (
-                        <NavDropdown.Item>
+                    <NavDropdown
+                      key={index}
+                      title={item}
+                      id="navbarScrollingDropdown"
+                    >
+                      {coffeeNavDrop.map((drop, index) => (
+                        <NavDropdown.Item key={index}>
                           <HashLink smooth to={`#${drop}`}>
                             {drop}
                           </HashLink>
@@ -105,14 +113,14 @@ const CoffeeHeader = () => {
         </Container>
       </Navbar>
       <Carousel>
-        {carouselData.map((item) => {
+        {carouselData.map((item, index) => {
           return (
-            <Carousel.Item>
+            <Carousel.Item key={index}>
               {/* <div className={`carosel-img carosel-img-${item.num}`}></div> */}
               <img className="d-block w-100" src={item.img} alt="First slide" />
               <Carousel.Caption>
-                {item.headers.map((header) => (
-                  <h2>{header}</h2>
+                {item.headers.map((header, index) => (
+                  <h2 key={index}>{header}</h2>
                 ))}
               </Carousel.Caption>
             </Carousel.Item>

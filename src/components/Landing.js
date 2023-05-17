@@ -1,17 +1,25 @@
+import { useState } from "react";
+
+// Redux
 import { useSelector } from "react-redux";
-import CoffeeHeader from "./components/CoffeeHeader";
-import AboutUS from "./components/sections/AboutUs";
-import Services from "./components/sections/Services";
-import Discount from "./components/sections/Discount";
-import Menu from "./components/sections/Menu";
-import Reservation from "./components/sections/Reservation";
-import Reviews from "./components/sections/Reviews";
-import CoffeeFooter from "./components/sections/CoffeeFooter";
+
+// Icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+
+// React bootstrap
 import { Button } from "react-bootstrap";
-import { useState } from "react";
-import OrderCart from "./components/OrderCart";
+
+// Components
+import CoffeeHeader from "./sections/CoffeeHeader";
+import AboutUS from "./sections/AboutUs";
+import Services from "./sections/Services";
+import Discount from "./sections/Discount";
+import Menu from "./sections/Menu";
+import Reservation from "./sections/Reservation";
+import Reviews from "./sections/Reviews";
+import CoffeeFooter from "./sections/CoffeeFooter";
+import OrderCart from "./sections/OrderCart";
 
 const Landing = () => {
   const { scrolled, orderCount } = useSelector((state) => state.coffee);
