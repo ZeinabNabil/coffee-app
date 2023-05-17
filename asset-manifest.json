@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/ZeinabNabil/coffee-app.git/static/css/main.96acb42b.css",
-    "main.js": "/ZeinabNabil/coffee-app.git/static/js/main.ef00d1f7.js",
-    "static/js/787.68ac0a90.chunk.js": "/ZeinabNabil/coffee-app.git/static/js/787.68ac0a90.chunk.js",
-    "static/media/about.png": "/ZeinabNabil/coffee-app.git/static/media/about.eaecffd48600a7dd44fd.png",
-    "static/media/bg.jpg": "/ZeinabNabil/coffee-app.git/static/media/bg.37824750481021fa3557.jpg",
-    "static/media/carousel-1.jpg": "/ZeinabNabil/coffee-app.git/static/media/carousel-1.23a504b99e4e0bab2628.jpg",
-    "static/media/service-2.jpg": "/ZeinabNabil/coffee-app.git/static/media/service-2.e3e2bbc160466327cd49.jpg",
-    "static/media/carousel-2.jpg": "/ZeinabNabil/coffee-app.git/static/media/carousel-2.1a8d62d6bce3a4ef7885.jpg",
-    "static/media/service-1.jpg": "/ZeinabNabil/coffee-app.git/static/media/service-1.d7febddd4fe0b8ddd2fd.jpg",
-    "static/media/service-4.jpg": "/ZeinabNabil/coffee-app.git/static/media/service-4.a9cfc5cda96c1cbf1035.jpg",
-    "static/media/service-3.jpg": "/ZeinabNabil/coffee-app.git/static/media/service-3.fe7b60be60599bcdf0cc.jpg",
-    "static/media/menu-3.jpg": "/ZeinabNabil/coffee-app.git/static/media/menu-3.c6d42442e63f4d67efec.jpg",
-    "static/media/menu-1.jpg": "/ZeinabNabil/coffee-app.git/static/media/menu-1.29709195e3c9ba4e8847.jpg",
-    "static/media/menu-2.jpg": "/ZeinabNabil/coffee-app.git/static/media/menu-2.de38edaf22bbc8206545.jpg",
-    "index.html": "/ZeinabNabil/coffee-app.git/index.html",
-    "main.96acb42b.css.map": "/ZeinabNabil/coffee-app.git/static/css/main.96acb42b.css.map",
-    "main.ef00d1f7.js.map": "/ZeinabNabil/coffee-app.git/static/js/main.ef00d1f7.js.map",
-    "787.68ac0a90.chunk.js.map": "/ZeinabNabil/coffee-app.git/static/js/787.68ac0a90.chunk.js.map"
+    "main.css": "/coffee-app/static/css/main.8918f92b.css",
+    "main.js": "/coffee-app/static/js/main.e2065825.js",
+    "static/js/787.68ac0a90.chunk.js": "/coffee-app/static/js/787.68ac0a90.chunk.js",
+    "static/media/about.png": "/coffee-app/static/media/about.eaecffd48600a7dd44fd.png",
+    "static/media/bg.jpg": "/coffee-app/static/media/bg.37824750481021fa3557.jpg",
+    "static/media/carousel-1.jpg": "/coffee-app/static/media/carousel-1.23a504b99e4e0bab2628.jpg",
+    "static/media/service-2.jpg": "/coffee-app/static/media/service-2.e3e2bbc160466327cd49.jpg",
+    "static/media/carousel-2.jpg": "/coffee-app/static/media/carousel-2.1a8d62d6bce3a4ef7885.jpg",
+    "static/media/service-1.jpg": "/coffee-app/static/media/service-1.d7febddd4fe0b8ddd2fd.jpg",
+    "static/media/service-4.jpg": "/coffee-app/static/media/service-4.a9cfc5cda96c1cbf1035.jpg",
+    "static/media/service-3.jpg": "/coffee-app/static/media/service-3.fe7b60be60599bcdf0cc.jpg",
+    "static/media/menu-3.jpg": "/coffee-app/static/media/menu-3.c6d42442e63f4d67efec.jpg",
+    "static/media/menu-1.jpg": "/coffee-app/static/media/menu-1.29709195e3c9ba4e8847.jpg",
+    "static/media/menu-2.jpg": "/coffee-app/static/media/menu-2.de38edaf22bbc8206545.jpg",
+    "index.html": "/coffee-app/index.html",
+    "main.8918f92b.css.map": "/coffee-app/static/css/main.8918f92b.css.map",
+    "main.e2065825.js.map": "/coffee-app/static/js/main.e2065825.js.map",
+    "787.68ac0a90.chunk.js.map": "/coffee-app/static/js/787.68ac0a90.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.96acb42b.css",
-    "static/js/main.ef00d1f7.js"
+    "static/css/main.8918f92b.css",
+    "static/js/main.e2065825.js"
   ]
 }
